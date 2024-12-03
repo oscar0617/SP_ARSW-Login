@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          aad:
+            client-id: 321d4548-18b3-4246-ae9c-1b8d9db68610
+            client-secret: 5xn8Q~3ln9R8PNesA4hv6fjCpXVxzlq0H4uJedns
+            scope: openid, profile, email
+        provider:
+          aad:
+            issuer-uri: https://login.microsoftonline.com/7106d660-cd9e-4482-a425-a38a2432c8f8/v2.0
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://login.microsoftonline.com/7106d660-cd9e-4482-a425-a38a2432c8f8/discovery/v2.0/keys
